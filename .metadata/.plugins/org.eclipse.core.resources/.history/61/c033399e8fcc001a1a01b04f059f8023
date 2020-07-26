@@ -1,0 +1,25 @@
+package mathematical;
+
+public class CollumnNumber {
+	
+	static int titleToNumber(String A) {
+		int a = Integer.parseInt(A);
+		if(a <= 26) {
+			a += 64;
+			char c = (char)a;
+			String s = String.valueOf(c);
+			a = Integer.parseInt(s);
+		}
+		return 0;
+    }
+
+	public static void main(String[] args) {
+		
+		String s = "1";
+		
+		System.out.println(titleToNumber(s));
+//		System.out.println((c[0]);
+
+	}
+
+}

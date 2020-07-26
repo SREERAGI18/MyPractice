@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value="a"/>
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="true"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<list key="findhistory">
+			<item value="matrix"/>
+			<item value="pJ"/>
+			<item value="24"/>
+			<item value="x "/>
+			<item value="x"/>
+			<item value="count"/>
+			<item value="total"/>
+			<item value="size"/>
+			<item value="arr"/>
+			<item value="newArray"/>
+			<item value="10"/>
+			<item value="int"/>
+			<item value="double "/>
+			<item value="long"/>
+			<item value="LinkedList"/>
+		</list>
+		<list key="replacehistory">
+			<item value="a"/>
+			<item value="j"/>
+			<item value="pivot"/>
+			<item value="numberOfInversions"/>
+			<item value="dist"/>
+			<item value="curr"/>
+			<item value="perUnit"/>
+			<item value="arr"/>
+			<item value="20"/>
+			<item value="long"/>
+			<item value="BigInteger"/>
+			<item value="double"/>
+			<item value="ArrayList"/>
+			<item value="LInkedList"/>
+			<item value="float"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="793"/>
+		<item key="DIALOG_Y_ORIGIN" value="124"/>
+		<item key="DIALOG_WIDTH" value="385"/>
+		<item key="DIALOG_HEIGHT" value="523"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+</section>

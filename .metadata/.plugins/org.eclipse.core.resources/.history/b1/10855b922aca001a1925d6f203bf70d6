@@ -1,0 +1,46 @@
+package arrays;
+
+import java.util.*;
+
+public class PickFrmBothSide {
+	
+	static int solve(ArrayList<Integer> A, int B) {
+		int i=0;
+        int j=A.size()-1;
+        int sum=0;
+        
+        for(int k=0; k<B; k++) {
+        	if(j<A.size()/2) {
+        		j=i;
+        	}
+        	if(i>A.size()/2) i=j;
+        	if(A.get(i) >= A.get(j)) {
+        		
+        		sum += A.get(i);
+        		i++;
+        	}else {
+        		
+        		sum += A.get(j);
+        		j--;
+        	}
+        }
+        return sum;
+    }
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		String s = sc.nextLine();
+		String in[] = s.split(", ");
+		int B = sc.nextInt();
+		
+		ArrayList<Integer> A = new ArrayList<Integer>();
+		
+		for(int i=0; i<in.length; i++) {
+			A.add(Integer.parseInt(in[i]));
+		}
+		
+		System.out.print(solve(A, B));
+	}
+
+}

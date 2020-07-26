@@ -1,0 +1,22 @@
+package mathematical;
+
+public class CollumnNumber {
+	
+	static int titleToNumber(String A) {
+		int a = Integer.parseInt(A);
+		if(a <= 26) {
+			
+		}
+		return 0;
+    }
+
+	public static void main(String[] args) {
+		
+		String s = "1";
+		char c [] = s.toCharArray();
+//		System.out.println(titleToNumber(s));
+		System.out.println((int)c[0]);
+
+	}
+
+}

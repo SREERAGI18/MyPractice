@@ -1,0 +1,30 @@
+package mathematical;
+import java.util.*;
+
+public class CollumnNumber {
+	
+//	static String titleToNumber(int A) {
+//		
+//		ArrayList<String> table = new ArrayList<>();
+//		for(int i='A'; i<='Z'+1; i++) {
+//			table.add(String.valueOf((char) (i-1)));
+//		}
+//		
+//		if(A <= 26) {
+//			return table.get(A);
+//		}
+//    }
+
+	public static void main(String[] args) {
+		
+		ArrayList<String> table = new ArrayList<>();
+		for(int i='A'; i<='Z'+1; i++) {
+			table.add(String.valueOf((char) (i-1)));
+		}
+		table.add("Z");
+		
+		System.out.println(table.get(27));
+
+	}
+
+}

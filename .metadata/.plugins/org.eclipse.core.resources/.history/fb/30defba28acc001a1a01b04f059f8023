@@ -1,0 +1,15 @@
+package mathematical;
+
+public class CollumnNumber {
+	
+	public int titleToNumber(String A) {
+		if(Integer.parseInt(s) <= 26) return A-'@';
+    }
+
+	public static void main(String[] args) {
+		
+		System.out.println(String.valueOf('A'));
+
+	}
+
+}

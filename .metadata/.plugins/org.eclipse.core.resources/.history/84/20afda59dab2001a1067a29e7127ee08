@@ -1,0 +1,79 @@
+package binarySearchAndTwoPointer;
+import java.util.*;
+
+public class IntersectionOfTwoSortedArrays {
+	
+	static ArrayList<Integer> intersect(final List<Integer> A, final List<Integer> B) {
+		
+		ArrayList<Integer> res = new ArrayList<>();
+		boolean visited [] = new boolean[A.size()];
+		int n1 = A.size();
+		int n2 = B.size();
+		
+		int i = 0;
+		int j = 0;
+//		int k =0;
+		
+		if(n1 > n2) {
+			
+			while(j<n2) {
+				if(A.get(i) == B.get(j)) {
+					res.add(B.get(j));
+					j++;
+				}
+				i++;
+			}
+			
+		}else {
+			
+			while(i<n1) {
+				if(A.get(i) == B.get(j)) {
+					res.add(A.get(i));
+					i++;
+				}
+				j++;
+			}
+			
+		}
+        
+        return res;
+    }
+
+	public static void main(String[] args) {
+		
+		ArrayList<Integer> A = new ArrayList<>();
+		ArrayList<Integer> B = new ArrayList<>();
+		
+		A.add(1);
+		A.add(2);
+		A.add(3);
+		A.add(3);
+		A.add(4);
+		A.add(5);
+		A.add(6);
+		
+		B.add(3);
+		B.add(3);
+		B.add(5);
+		
+		ArrayList<Integer> res = intersect(A,B);
+		
+		Iterator<Integer> i = res.listIterator();
+		
+		while(i.hasNext()) {
+			System.out.print(i.next()+" ");
+		}
+//		A.remove(B.get(0));
+//		B.remove(0);
+//		
+		
+		
+//		while(i.hasNext()) {
+//			System.out.print(i.next()+" ");
+//		}
+		
+//		A.remove(A.indexOf(B.get(0)));
+//		B.remove(0);
+	}
+
+}

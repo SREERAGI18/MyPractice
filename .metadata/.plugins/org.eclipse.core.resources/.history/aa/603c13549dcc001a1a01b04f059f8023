@@ -1,0 +1,30 @@
+package mathematical;
+import java.util.*;
+
+public class CollumnNumber {
+	
+	static String titleToNumber(int A) {
+		
+		ArrayList<String> table = new ArrayList<>();
+		for(int i='A'; i<='Z'+1; i++) {
+			table.add(String.valueOf((char) (i-1)));
+		}
+		table.add("Z");
+		
+		if(A <= 26) {
+			return table.get(A);
+		}
+		
+		int first = A/26;
+		int sec = A%26;
+		
+		return table.get(first)+table.get(sec);
+    }
+
+	public static void main(String[] args) {
+		
+		System.out.println(titleToNumber(28));
+
+	}
+
+}

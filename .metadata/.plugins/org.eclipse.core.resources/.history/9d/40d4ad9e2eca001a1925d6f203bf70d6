@@ -1,0 +1,68 @@
+package arrays;
+
+import java.util.*;
+
+public class PickFrmBothSide {
+	
+	static int solve(ArrayList<Integer> A, int B) {
+		
+        ArrayList<Integer> left = new ArrayList<>();
+        ArrayList<Integer> right = new ArrayList<>();
+        
+        for(int k=0; k<A.size()/2-1; k++) {
+        	left.add(A.get(k));
+        }
+        for(int k=A.size()/2; k<A.size(); k++) {
+        	right.add(A.get(k));
+        }
+        
+//        Collections.sort(left);
+//        Collections.sort(right);
+        
+        int k=0;
+        int i=0;
+        int j=right.size()-1;
+        int sum=0;
+        
+        while(k<B) {
+        	
+        	if(i<left.size() && j>=0) {
+        		if(left.get(i) > right.get(j)) {
+            		sum+=left.get(i);
+            		i++;
+            	}else {
+            		{
+                		sum+=right.get(j);
+                		j--;
+                	}
+            	}
+        	}else if(i>=0) {
+        		sum+=left.get(i);
+        		i++;
+        	}else {
+        		sum+=right.get(j);
+        		j--;
+        	}
+//        	System.out.println(sum);
+        	k++;
+        }
+        return sum;
+    }
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		String s = sc.nextLine();
+		String in[] = s.split(", ");
+		int B = sc.nextInt();
+		
+		ArrayList<Integer> A = new ArrayList<Integer>();
+		
+		for(int i=0; i<in.length; i++) {
+			A.add(Integer.parseInt(in[i]));
+		}
+		
+		System.out.print(solve(A, B));
+	}
+
+}
